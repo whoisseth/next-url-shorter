@@ -4,16 +4,26 @@ import ShortLinkBox from "./ShortLinkBox";
 function Main() {
   return (
     <>
-      <div className=' bg-gray-100 px-8 flex gap-6 flex-col  static py-[8rem] -z-50'>
+      <div className=' bg-gray-100 px-8 flex gap-6 flex-col  static pt-[8rem] -z-50'>
         <ShortIt />
         <ShortLinkBox />
         <ShortLinkBox />
         <ShortLinkBox />
         <Statistics />
+        <div className="relative  ">
+          <div className="bg-Cyan w-2 h-20 absolute    left-1/2 -translate-x-1/2 top-[12rem] " />
+          <div className="bg-Cyan w-2 h-20 absolute  left-1/2 -translate-x-1/2 bottom-[20rem] " />
+          <Recognition image={'/images/icon-brand-recognition.svg'} title={'Brand Recognition'} desc={"Boost your brand recognition with each click. Generic links don't mean a thing . Branded links help instil confidence in your content."} />
+
+          <Recognition image={'/images/icon-detailed-records.svg'} title={'Detailed Records'} desc={"Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."} />
+          <Recognition image={'/images/icon-fully-customizable.svg'} title={'Fully Customizable'} desc={"Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."} />
+        </div>
+
       </div>
     </>
   );
 }
+export default Main;
 
 
 
@@ -37,11 +47,25 @@ export function ShortIt() {
 function Statistics() {
   return (
     <>
-      <div className=" text-center">
+      <div className=" text-center my-16">
         <div className="text-2xl font-semibold mb-4 ">Advanced Statistics </div>
         <p className="text-gray-400 font-medium ">Track how your links are performing across the web with our advnaced statics dashboard.</p>
       </div>
     </>
   )
 }
-export default Main;
+
+function Recognition({ image, title, desc }) {
+  return (
+    <>
+      <div className="bg-white p-4 rounded-md text-center pt-20 relative mb-20">
+        <div className="absolute -top-10   -translate-x-1/2   mx-auto  bg-Violet inline-block p-6 rounded-full">
+          <img src={image} alt="" />
+        </div>
+        <div className="font-semibold text-xl mb-4 " >{title}</div>
+        <div className="text-gray-400 text-sm ">{desc}</div>
+      </div>
+    </>
+  )
+}
+

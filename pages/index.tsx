@@ -2,6 +2,8 @@ import Navbar from '../components/Navbar'
 import Head from 'next/head'
 import Hero from '../components/Hero'
 import Main from '../components/Main'
+import BoostLinks from '../components/BoostLinks'
+import Footer from '../components/Footer'
 function index() {
   return (
     <>
@@ -13,7 +15,8 @@ function index() {
       <Navbar />
       <Hero />
       <Main />
-
+      <BoostLinks />
+      <Footer />
     </>
   )
 }
