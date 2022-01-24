@@ -1,8 +1,6 @@
 import Link from 'next/link'
-import { title } from 'process'
 import React from 'react'
-import Image from 'next/image'
-// import Svg1 from '../design/icon-facebook.svg'
+
 import { BsInstagram } from 'react-icons/bs'
 import { ImFacebook2, ImTwitter, ImPinterest } from 'react-icons/im'
 
