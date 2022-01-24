@@ -39,7 +39,7 @@ function Footer() {
 export default Footer
 interface linkBoxProps {
     title: string,
-    links: object,
+    links: any,
 }
 
 // function LinkBox({ title, links }) {
@@ -52,7 +52,7 @@ function LinkBox({ title, links }: linkBoxProps) {
                     {title}
                 </div>
                 <div className='flex gap-2  text-sm flex-col '>
-                    {links.map(link => {
+                    {links.map((link: any) => {
                         return (<div key={link.name}>
                             <Link href={link.link} >
                                 <a className='text-gray-400'>{link.name}</a>
