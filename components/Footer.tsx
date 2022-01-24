@@ -37,8 +37,13 @@ function Footer() {
 }
 
 export default Footer
+interface linkBoxProps {
+    title: string,
+    links: object,
+}
 
-function LinkBox({ title, links }) {
+// function LinkBox({ title, links }) {
+function LinkBox({ title, links }: linkBoxProps) {
     console.log(links)
     return (
         <>
