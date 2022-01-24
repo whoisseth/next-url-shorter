@@ -55,8 +55,13 @@ function Statistics() {
     </>
   )
 }
+interface propRecognition {
+  image: any,
+  title: any,
+  desc: any;
+}
 
-function Recognition({ image, title, desc }) {
+function Recognition({ image, title, desc }: propRecognition) {
   return (
     <>
       <div className="bg-white p-4 rounded-md text-center pt-20 relative mb-20">
