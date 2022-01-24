@@ -11,11 +11,11 @@ function Footer() {
                 </div>
             </Link>
             <div>
-                <LinkBox heading={'Features'} links={[{ name: 'Link Shortening', link: '/' }, { name: 'Branded Links', link: '/' }, { name: 'Analytics', link: '/' }]} />
+                <LinkBox title={'Features'} links={[{ name: 'Link Shortening', link: '/' }, { name: 'Branded Links', link: '/' }, { name: 'Analytics', link: '/' }]} />
 
-                <LinkBox heading={'Resources'} links={[{ name: 'Blog', link: '/' }, { name: ' Developers', link: '/' }, { name: 'Support', link: '/' }]} />
+                <LinkBox title={'Resources'} links={[{ name: 'Blog', link: '/' }, { name: ' Developers', link: '/' }, { name: 'Support', link: '/' }]} />
 
-                <LinkBox heading={'Company'} links={[{ name: 'About', link: '/' }, { name: ' Our Team', link: '/' }, { name: 'Careers', link: '/' }, { name: ' Contact', link: '/' }]} />
+                <LinkBox title={'Company'} links={[{ name: 'About', link: '/' }, { name: ' Our Team', link: '/' }, { name: 'Careers', link: '/' }, { name: ' Contact', link: '/' }]} />
             </div>
             <div className='flex gap-6'>
                 <Link href='/' >
@@ -38,13 +38,13 @@ function Footer() {
 
 export default Footer
 
-function LinkBox({ heading, links }) {
+function LinkBox({ title, links }) {
     console.log(links)
     return (
         <>
             <div className='text-white mb-12'>
                 <div className='font-semibold  mb-4'>
-                    {heading}
+                    {title}
                 </div>
                 <div className='flex gap-2  text-sm flex-col '>
                     {links.map(link => {

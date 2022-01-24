@@ -17,7 +17,7 @@ function Navbar() {
     const linkHover = 'hover:opacity-50  md:hover:text-Violet'
     return (
         <>
-            <nav className={'  py-10 md:py-0 px-8 md:px-16 flex items-center  justify-between md:justify-start max-w-7xl mx-auto text-lg  '}>
+            <nav className={'  py-10 md:py-0 px-8 md:px-20 flex items-center  justify-between md:justify-start max-w-7xl mx-auto text-lg  '}>
                 {/* 1 */}
                 <div className='logo md:mr-10'>
                     <img src="/images/logo.svg" alt="" />
