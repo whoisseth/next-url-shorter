@@ -38,7 +38,7 @@ function Footer() {
 
 export default Footer
 
-function LinkBox({ title: string, links }) {
+function LinkBox({ title: any, links }) {
     console.log(links)
     return (
         <>
