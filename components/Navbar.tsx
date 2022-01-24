@@ -14,7 +14,7 @@ function Navbar() {
     console.log(showMe)
     // repeat styling  
     const gap = 'gap-10'
-    const linkHover = '  hover:text-Violet  '
+    const linkHover = '  md:hover:text-Violet  '
 
     return (
         <>
