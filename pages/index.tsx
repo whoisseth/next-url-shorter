@@ -16,7 +16,7 @@ function index() {
       <Hero />
       <Main />
       <BoostLinks />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
