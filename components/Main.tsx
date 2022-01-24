@@ -4,20 +4,21 @@ import ShortLinkBox from "./ShortLinkBox";
 function Main() {
   return (
     <>
-      <div className='bg-gray-100 px-8 flex gap-6 flex-col  static pt-[8rem] -z-50 md md:px-20 md:pt-[6rem] md:items-center md:'>
+      <div className='bg-gray-100 px-8 flex gap-6 flex-col  static pt-[8rem] -z-50 md md:px-20 md:pt-[6rem] md:items-center '>
         <ShortIt />
         <ShortLinkBox />
         <ShortLinkBox />
         <ShortLinkBox />
         <Statistics />
-        <div className="relative  ">
-          <div className="bg-Cyan w-2 h-20 absolute    left-1/2 -translate-x-1/2 top-[12rem] " />
-          <div className="bg-Cyan w-2 h-20 absolute  left-1/2 -translate-x-1/2 bottom-[20rem] " />
-          <Recognition image={'/images/icon-brand-recognition.svg'} title={'Brand Recognition'} desc={"Boost your brand recognition with each click. Generic links don't mean a thing . Branded links help instil confidence in your content."} />
+        {/* <div className="relative  md:grid md:grid-cols-3 md:gap-8  bg-blue-300  items-center"> */}
+        <div className="relative  md:flex md:gap-8   md:items-stretch md:h-[20rem] md:mb-32  ">
+          <div className="bg-Cyan w-2 h-20 absolute  left-1/2 -translate-x-1/2 top-[12rem] md:h-2 md:w-20  md:top-32 md:left-[22rem]" />
+          <div className="bg-Cyan w-2 h-20 absolute  left-1/2 -translate-x-1/2 bottom-[20rem] md:h-2 md:w-20  md:top-32 md:left-[42rem] " />
+          <Recognition style={''} image={'/images/icon-brand-recognition.svg'} title={'Brand Recognition'} desc={"Boost your brand recognition with each click. Generic links don't mean a thing . Branded links help instil confidence in your content."} />
 
-          <Recognition image={'/images/icon-detailed-records.svg'} title={'Detailed Records'} desc={"Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."} />
+          <Recognition style={'mt-10'} image={'/images/icon-detailed-records.svg'} title={'Detailed Records'} desc={"Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."} />
 
-          <Recognition image={'/images/icon-fully-customizable.svg'} title={'Fully Customizable'} desc={"Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."} />
+          <Recognition style={'mt-20'} image={'/images/icon-fully-customizable.svg'} title={'Fully Customizable'} desc={"Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."} />
         </div>
 
       </div>
@@ -58,14 +59,15 @@ function Statistics() {
 interface propRecognition {
   image: any,
   title: any,
-  desc: any;
+  desc: any,
+  style: any,
 }
 
-function Recognition({ image, title, desc }: propRecognition) {
+function Recognition({ image, title, desc, style }: propRecognition) {
   return (
     <>
-      <div className="bg-white p-4 rounded-md text-center pt-20 relative mb-20">
-        <div className="absolute -top-10   -translate-x-1/2   mx-auto  bg-Violet inline-block p-6 rounded-full">
+      <div className={"bg-white p-4 rounded-md text-center pt-20 relative mb-20 md:w-[20rem] md:text-left md:p-8 md:pt-14  md:h-[14rem] " + style}>
+        <div className="absolute -top-10   -translate-x-1/2   mx-auto  bg-Violet inline-block p-6 rounded-full md:p-4 md:left-14 ">
           <img src={image} alt="" />
         </div>
         <div className="font-semibold text-xl mb-4 " >{title}</div>
