@@ -50,7 +50,7 @@ interface linkBoxProps {
 
 // function LinkBox({ title, links }) {
 function LinkBox({ title, links }: linkBoxProps) {
-    console.log(links)
+    // console.log(links)
     return (
         <>
             <div className='text-white mb-12'>
