@@ -1,4 +1,4 @@
-# Live Site url - https://utkurlshortner.vercel.app/
+# Live Site url - https://linkshortly.vercel.app/
 
 
 # Frontend Mentor - Shortly URL shortening API Challenge
